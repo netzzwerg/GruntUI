@@ -6,6 +6,7 @@ module.exports = function(grunt) {
     connect: {
       server: {
         options: {
+          base: 'src',
           port: 8787,
           hostname: '0.0.0.0',
           open: true,
@@ -22,14 +23,14 @@ module.exports = function(grunt) {
 
     watch: {
       reload: {
-        files: ['*.js','index.html'],
+        files: ['src/**/*.js','src/index.html'],
         tasks: [],
         options: {
           livereload: 35353
         }
       },
       scss: {
-        files: ['*.scss'],
+        files: ['scss/**/*.scss'],
         tasks: ['compass'],
         options: {
           livereload: 35353
@@ -41,9 +42,9 @@ module.exports = function(grunt) {
       build: {
         options: {
           relativeAssets: true,
-          sassDir: '.',
-          cssDir: '.',
-          imagesDir: '.',
+          sassDir: 'scss',
+          cssDir: 'css',
+          imagesDir: 'img',
           environment: 'development',
           outputStyle: 'expanded'
         }

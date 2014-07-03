@@ -6,8 +6,6 @@
     "**/*.txt"
   ],
   "dependencies": {
-    "<name>": "<version>",
-    "<name>": "<folder>",
-    "<name>": "<package>"
+    "foundation": "~5.3.0"
   }
 }
