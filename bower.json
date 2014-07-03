@@ -1,11 +1,14 @@
 {
-  "name": "GruntGUI",
-  "main": "main.css",
+  "name": "GruntUI",
+  "license": "MIT",
+  "private": true,
   "ignore": [
     ".jshintrc",
     "**/*.txt"
   ],
   "dependencies": {
+    "angular": "~1.2.19",
+    "jquery": "1.11.1",
     "foundation": "~5.3.0"
   }
 }

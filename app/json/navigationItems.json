@@ -1,0 +1,6 @@
+[
+  {"id": "1", "name": "Overview", "route": "#/overview" },
+  {"id": "2", "name": "Tasks", "route": "#/tasks" },
+  {"id": "3", "name": "Components", "route": "#/components" },
+  {"id": "4", "name": "Modules", "route": "#/modules" }
+]

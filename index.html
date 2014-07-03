@@ -1,14 +1,15 @@
-<html>
+<!doctype html>
+<html lang="en" ng-app="gruntUIApp">
 
 <head>
     <title>GruntGUI</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="app/css/main.css">
 </head>
 
 <body>
 
-    <nav class="top-bar" data-topbar>
+    <nav class="top-bar">
         <ul class="title-area">
             <li class="name">
                 <h1>
@@ -34,18 +35,11 @@
 
     <div class="row">
         <div class="large-3 medium-4 columns sidebar">
-
-            <ul class="side-nav">
-                <li><a href="#">Overview</a>
-                </li>
-                <li><a href="#">Tasks</a>
-                </li>
-                <li><a href="#">Components</a>
-                </li>
-                <li><a href="#">Modules</a>
+            <ul class="side-nav" ng-controller="NavigationItemsCtrl">
+                <li ng-repeat="navigationItem in navigationItems | filter:search">
+                  <a href="{{navigationItem.route}}">{{navigationItem.name}}</a>
                 </li>
             </ul>
-
         </div>
         <div class="large-9 medium-8 columns">
             <h1>Overview</h1>
@@ -54,7 +48,9 @@
         </div>
     </div>
 
-    <script src="js/app.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app/js/app.js"></script>
     <script src="//localhost:35353/livereload.js"></script>
 
 </body>
