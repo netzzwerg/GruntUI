@@ -1,0 +1,13 @@
+{
+  "name": "GruntGUI",
+  "main": "main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "<name>": "<version>",
+    "<name>": "<folder>",
+    "<name>": "<package>"
+  }
+}
